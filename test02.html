@@ -7,19 +7,174 @@
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css">
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 
-    <title>Complex icons</title>
+    <title>MDL</title>
 
   </head>
   <body>
-    <div id="header">
-    </div>
-    <div id="container">
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--4-col">Sidebar</div>
-        <div class="mdl-cell mdl-cell--8-col">Content</div>
-      </div>
 
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Title</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- search -->
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field" />
+            </div>
+          </div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="">Menu 1</a>
+            <a class="mdl-navigation__link" href="">Menu 2</a>
+            <a class="mdl-navigation__link" href="">Menu 3</a>
+            <a class="mdl-navigation__link" href="">Menu 4</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Link 1</a>
+          <a class="mdl-navigation__link" href="">Link 2</a>
+          <a class="mdl-navigation__link" href="">Link 3</a>
+          <a class="mdl-navigation__link" href="">Link 4</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <!-- Your content goes here -->
+
+          <!-- product card -->
+          <section>
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media">
+                  <img src="http://www.proprofs.com/games/puzzle/sliding/upload/1765818_1421138136.jpg">
+                </div>
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">title Text Goes Here</h2>
+                </div>
+
+                <div class="mdl-card__supporting-text">
+                  This text might describe the photo and provide further information, such as where and
+                  when it was taken.
+                </div>
+                <div class="mdl-card__actions">
+                  <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                    androidify.com
+                  </a>
+                </div>
+                <div class="mdl-card__menu">
+                  <button id="menu-speed-1" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                  </button>
+                  <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-speed-1">
+                    <li class="mdl-menu__item">Fast</li>
+                    <li class="mdl-menu__item" disabled>Medium</li>
+                    <li class="mdl-menu__item">Slow</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">title Text Goes Here</h2>
+                </div>
+                <div class="mdl-card__media">
+                  <img src="http://www.proprofs.com/games/puzzle/sliding/upload/1765818_1421138136.jpg">
+                </div>
+                <div class="mdl-card__supporting-text">
+                  This text might describe the photo and provide further information, such as where and
+                  when it was taken.
+                </div>
+                <div class="mdl-card__actions">
+                  <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                    androidify.com
+                  </a>
+                </div>
+                <div class="mdl-card__menu">
+                  <button id="menu-speed-2" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                  </button>
+                  <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-speed-2">
+                    <li class="mdl-menu__item">Fast</li>
+                    <li class="mdl-menu__item" disabled>Medium</li>
+                    <li class="mdl-menu__item">Slow</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media">
+                  <img src="http://www.proprofs.com/games/puzzle/sliding/upload/1765818_1421138136.jpg">
+                </div>
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">title Text Goes Here</h2>
+                </div>
+
+                <div class="mdl-card__supporting-text">
+                  This text might describe the photo and provide further information, such as where and
+                  when it was taken.
+                </div>
+                <div class="mdl-card__actions">
+                  <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                    androidify.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media">
+                  <img src="http://www.proprofs.com/games/puzzle/sliding/upload/1765818_1421138136.jpg">
+                </div>
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">title Text Goes Here</h2>
+                </div>
+
+                <div class="mdl-card__supporting-text">
+                  This text might describe the photo and provide further information, such as where and
+                  when it was taken.
+                </div>
+                <div class="mdl-card__actions">
+                  <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                    androidify.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--3-col mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__media">
+                  <img src="http://www.proprofs.com/games/puzzle/sliding/upload/1765818_1421138136.jpg">
+                </div>
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">title Text Goes Here</h2>
+                </div>
+
+                <div class="mdl-card__supporting-text">
+                  This text might describe the photo and provide further information, such as where and
+                  when it was taken.
+                </div>
+                <div class="mdl-card__actions">
+                  <a class="mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                    androidify.com
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+      </main>
     </div>
 
   </body>
